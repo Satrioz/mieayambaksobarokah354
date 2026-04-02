@@ -1,4 +1,4 @@
-# 🍜 Barokah 354 - Landing Page & Order System
+# 🍜 Barokah 354 - Landing Page 
 
 Website landing page modern yang dirancang khusus untuk **UMKM Mie Ayam & Bakso Barokah 354**. Proyek ini fokus pada kecepatan akses, keamanan tingkat tinggi, dan pengalaman pengguna (*User Experience*) yang intuitif untuk meningkatkan konversi penjualan melalui WhatsApp.
 
