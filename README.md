@@ -5,7 +5,6 @@ Website landing page modern dan responsif untuk usaha kuliner **Barokah 354** di
 ## 🌟 Fitur Unggulan (Technical Highlights)
 
 * **🛡️ Hardened Security**: Mengimplementasikan **Content Security Policy (CSP)** untuk mencegah serangan XSS, *Clickjacking*, serta blokir otomatis terhadap iklan nakal dan skrip judi online.
-* **⏰ Real-time Store Status**: Logika JavaScript dinamis yang mendeteksi jam operasional toko secara *real-time* untuk memberikan informasi buka/tutup otomatis kepada pelanggan.
 * **📈 Dynamic Pricing Engine**: Integrasi dengan API Hari Libur Nasional untuk penyesuaian harga otomatis (Markup Rp1.000) pada hari libur.
 * **💬 Integrated Google Reviews**: Menampilkan testimoni pelanggan asli dari Google Maps secara dinamis menggunakan struktur data yang rapi.
 * **🚀 Optimized Performance**: Menggunakan **Unobtrusive JavaScript** (pemisahan logika dari HTML) untuk memastikan kepatuhan terhadap standar keamanan modern dan kecepatan akses.
