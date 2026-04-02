@@ -1,10 +1,14 @@
-/* Custom styles for Mie Ayam Bakso Barokah 354 */
+/* --- GLOBAL & ANIMATION --- */
+html {
+  scroll-behavior: smooth;
+}
 
-/* Animasi fade-in saat scroll */
+/* Animasi fade-in saat scroll yang lebih ringan */
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.6s ease-out;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
 }
 
 .animate-on-scroll.visible {
@@ -12,7 +16,9 @@
   transform: translateY(0);
 }
 
-/* Hover effects untuk menu items */
+/* --- COMPONENTS --- */
+
+/* Menu Item Cards */
 .menu-item {
   transition:
     transform 0.3s ease,
@@ -20,18 +26,25 @@
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Custom button hover */
+/* Custom Buttons */
+.btn-custom {
+  transition: all 0.3s ease;
+}
+
 .btn-custom:hover {
   transform: scale(1.05);
 }
 
-/* Navbar animations */
+/* Navbar Links Interaction */
 nav a {
   position: relative;
+  transition: color 0.3s ease;
 }
 
 nav a::after {
@@ -46,102 +59,57 @@ nav a::after {
   transform: translateX(-50%);
 }
 
-nav a:hover::after {
+nav a:hover::after,
+nav a.active::after {
   width: 100%;
 }
 
-/* Ripple effect for buttons */
+nav a.active {
+  color: #fbbf24 !important;
+}
+
+/* --- UTILITIES --- */
+
+/* Testimonial Slider Smoothness */
+#testimonial-slider {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efek Ripple Sederhana */
 .btn-ripple {
   position: relative;
   overflow: hidden;
 }
 
-.btn-ripple::before {
+.btn-ripple:active::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  transform: translate(-50%, -50%);
-  transition:
-    width 0.6s,
-    height 0.6s;
-}
-
-.btn-ripple:active::before {
   width: 300px;
   height: 300px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.4s,
+    height 0.4s;
 }
 
-/* Active link highlight for scroll spy */
-nav a.active {
-  color: #fbbf24 !important;
-}
-
-nav a.active::after {
-  width: 100%;
-}
-
-/* Mobile responsive improvements */
+/* --- RESPONSIVE ADJUSTMENTS --- */
 @media (max-width: 768px) {
   .menu-item img {
-    height: 150px;
+    height: 180px;
     object-fit: cover;
   }
-  
+
   nav h1 {
     font-size: 1.25rem;
   }
-  
-  .hero-text {
-    font-size: 1.5rem;
-  }
-  
-  .btn-custom {
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-  }
-  
-  /* Reduce padding for mobile */
+
   section {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
-  
-  .max-w-6xl {
-    max-width: 100%;
-  }
-  
-  /* Stack hero content vertically on very small screens */
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  /* Adjust menu grid for mobile */
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  /* Make buttons full width on mobile */
-  .btn-mobile-full {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-}
-
-/* Prevent right-click and copy */
-body {
-  /* Removed for development */
-}
-
-img {
-  /* Removed pointer-events for development */
-}
-
-html {
-  scroll-behavior: smooth;
 }
