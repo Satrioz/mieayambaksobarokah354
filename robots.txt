@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mieayambaksobarokah354.vercel.app/sitemap.xml
