@@ -7,7 +7,6 @@ Website landing page modern yang dirancang khusus untuk **UMKM Mie Ayam & Bakso 
 ## 🚀 Fitur Utama
 
 * **📅 Dynamic Pricing Engine**: Menggunakan Fetch API untuk mengecek hari libur nasional secara otomatis. Harga menu utama akan naik Rp1.000 (markup) saat hari raya/libur secara *real-time*.
-* **⏰ Smart Store Status**: Logika JavaScript yang mendeteksi jam operasional toko untuk memberikan informasi buka/tutup otomatis kepada pelanggan.
 * **🛡️ Hardened Security**: Implementasi **Content Security Policy (CSP)** yang ketat untuk mencegah serangan XSS, *Malvertising*, dan blokir otomatis terhadap iklan nakal/judi online.
 * **📱 Responsive & Interactive**: Dibangun dengan Tailwind CSS untuk tampilan sempurna di semua perangkat, dilengkapi dengan animasi *scroll-reveal* dan *testimonial slider*.
 * **⚡ Optimized Performance**: Menggunakan prinsip *Clean Code* dan *Unobtrusive JavaScript* untuk pemisahan logika yang rapi dan performa website yang ringan.
