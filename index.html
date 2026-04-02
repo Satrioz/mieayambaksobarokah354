@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; img-src 'self' https://picsum.photos data:; connect-src 'self' https://api-harilibur.vercel.app; frame-src https://www.google.com;"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Barokah 354</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800 pt-20">
+    <!-- Navbar -->
+    <nav
+      class="bg-gradient-to-r from-green-500 to-green-600 shadow-lg fixed top-0 w-full z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-white">🍜 Barokah 354</h1>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-6 items-center">
+          <a
+            href="#hero"
+            class="text-white hover:text-yellow-300 transition duration-300 font-medium"
+            >Beranda</a
+          >
+          <a
+            href="#about"
+            class="text-white hover:text-yellow-300 transition duration-300 font-medium"
+            >Tentang</a
+          >
+          <a
+            href="#menu"
+            class="text-white hover:text-yellow-300 transition duration-300 font-medium"
+            >Menu</a
+          >
+          <a
+            href="#lokasi"
+            class="text-white hover:text-yellow-300 transition duration-300 font-medium"
+            >Lokasi</a
+          >
+          <a
+            href="#order"
+            class="bg-yellow-400 text-green-800 px-6 py-2 rounded-full hover:bg-yellow-300 transition duration-300 font-semibold shadow-md"
+            >Pesan Sekarang</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-toggle"
+          class="md:hidden text-white focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-green-600 px-4 py-4">
+        <a
+          href="#hero"
+          class="block text-white hover:text-yellow-300 py-2 transition duration-300"
+          >Beranda</a
+        >
+        <a
+          href="#about"
+          class="block text-white hover:text-yellow-300 py-2 transition duration-300"
+          >Tentang</a
+        >
+        <a
+          href="#menu"
+          class="block text-white hover:text-yellow-300 py-2 transition duration-300"
+          >Menu</a
+        >
+        <a
+          href="#lokasi"
+          class="block text-white hover:text-yellow-300 py-2 transition duration-300"
+          >Lokasi</a
+        >
+        <a
+          href="#order"
+          class="block bg-yellow-400 text-green-800 px-4 py-2 rounded-full mt-2 hover:bg-yellow-300 transition duration-300 font-semibold text-center"
+          >Pesan Sekarang</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-20 bg-gray-50 animate-on-scroll">
+      <div
+        class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="text-center md:text-left">
+          <h2
+            class="text-3xl md:text-5xl font-extrabold mb-4 text-green-700 leading-tight"
+          >
+            🍜 MIEAYAMBAKSOBAROKAH354
+          </h2>
+          <p class="mb-8 text-gray-600 text-lg">
+            Rasa nagih, harga bersahabat, dan sudah jadi favorit warga Sidorejo.
+            Cocok buat makan santai bareng keluarga!
+          </p>
+          <div class="flex flex-row gap-4 justify-center md:justify-start">
+            <a
+              href="#menu"
+              class="bg-green-600 text-white px-8 py-3 rounded-2xl hover:bg-green-700 transition btn-custom"
+              >Lihat Menu</a
+            >
+            <a
+              href="#lokasi"
+              class="border border-green-600 text-green-600 px-8 py-3 rounded-2xl hover:bg-green-50 transition btn-custom flex items-center gap-2"
+              >📍 Lokasi</a
+            >
+          </div>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="https://picsum.photos/600/600?food"
+            alt="Bakso Barokah Spesial"
+            class="rounded-3xl shadow-xl w-full max-w-lg object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-white py-16 animate-on-scroll">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Menu Kami</h3>
+
+        <!-- Makanan -->
+        <h4 class="text-2xl font-semibold mb-6 text-center">🍜 Makanan</h4>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12 menu-grid"
+        >
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/300/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Mie Ayam</h4>
+            <p class="text-green-600 font-bold price-counter">Rp10.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/301/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Mie Ayam Jumbo</h4>
+            <p class="text-green-600 font-bold price-counter">Rp15.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/302/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Mie Ayam Bakso</h4>
+            <p class="text-green-600 font-bold price-counter">Rp13.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/303/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Mie Ayam Bakso Jumbo</h4>
+            <p class="text-green-600 font-bold price-counter">Rp18.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/304/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Bakso</h4>
+            <p class="text-green-600 font-bold price-counter">Rp12.000</p>
+          </div>
+        </div>
+
+        <!-- Minuman -->
+        <h4 class="text-2xl font-semibold mb-6 text-center">🥤 Minuman</h4>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 menu-grid"
+        >
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/305/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Es Teh</h4>
+            <p class="text-green-600 font-bold price-counter">Rp3.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/306/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Es Jeruk</h4>
+            <p class="text-green-600 font-bold price-counter">Rp4.000</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-2xl shadow menu-item">
+            <img src="https://picsum.photos/307/200" class="rounded-xl mb-3" />
+            <h4 class="font-semibold text-lg">Es Campur</h4>
+            <p class="text-green-600 font-bold price-counter">Rp5.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center animate-on-scroll"
+    >
+      <img src="https://picsum.photos/500/400" class="rounded-2xl shadow" />
+      <div>
+        <h3 class="text-3xl font-bold mb-4">Tentang Kami</h3>
+        <p class="text-gray-600">
+          MIEAYAMBAKSOBAROKAH354 adalah usaha keluarga yang menyajikan makanan
+          lezat dengan bahan berkualitas dan penuh berkah.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="py-16 bg-gray-100 animate-on-scroll" id="testimoni">
+      <div class="relative px-4 overflow-hidden">
+        <div
+          id="testimonial-slider"
+          class="flex gap-4 transition-transform duration-700 ease-in-out"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Lokasi -->
+    <section id="lokasi" class="py-16 animate-on-scroll">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-4">Lokasi Kami</h3>
+        <p class="mb-6 text-gray-600">
+          Desa Sidorejo, Kec. Sekampung Udik, Lampung Timur, Lampung
+        </p>
+
+        <div class="rounded-2xl shadow-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.637380962758!2d105.61128117498342!3d-5.297182394681434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40f135516e2f1f%3A0x6b5db2524a165762!2sBakso%20Barokah%20354!5e0!3m2!1sid!2sid!4v1711600000000!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="order" class="bg-green-600 text-white py-20 animate-on-scroll">
+      <div
+        class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div
+          class="text-center md:text-left border-b md:border-b-0 md:border-r border-green-400 pb-8 md:pb-0 md:pr-12"
+        >
+          <h3 class="text-3xl font-bold mb-4">Pesan Sekarang</h3>
+          <p class="mb-6 text-green-100">
+            Lapar? Langsung klik tombol di bawah untuk pesan via WhatsApp. Kami
+            siap antar!
+          </p>
+          <a
+            href="https://wa.me/62XXXXXXXXXX"
+            class="inline-block bg-white text-green-600 px-10 py-4 rounded-2xl font-bold hover:bg-gray-100 transition btn-custom shadow-xl"
+          >
+            Order via WhatsApp
+          </a>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h3 class="text-3xl font-bold mb-4">Berikan Masukan</h3>
+          <p class="mb-6 text-green-100">
+            Punya saran atau kritik? Kirimkan email kepada kami agar Barokah 354
+            makin oke!
+          </p>
+          <a
+            href="mailto:emailkamu@gmail.com?subject=Masukan Pelanggan Barokah 354"
+            class="inline-block border-2 border-white text-white px-10 py-4 rounded-2xl font-bold hover:bg-white hover:text-green-600 transition btn-custom"
+          >
+            Kirim Masukan (Email)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+      <p>© 2026 MIEAYAMBAKSOBAROKAH354</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
